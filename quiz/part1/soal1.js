@@ -5,22 +5,14 @@ let input = [
     ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
 ]
 
-console.log("Nomor ID : ", input[0][0]);
-console.log("Nama Lengkap : ", input[0][1])
-console.log("TTL : ", input[0][2] + " " + input[0][3])
-console.log("Hobi : ", input[0][4])
+function dataHandling() {
+    for (let i = 0; i < input.length; i++) {
+        const dataNama = input[i]
+        console.log("Nomor ID : ", dataNama[0])
+        console.log("Nama Lengkap : ", dataNama[1])
+        console.log("TTL : ", dataNama[2] + " " + dataNama[3])
+        console.log("Hobi : ", dataNama[4])
+    }
+}
 
-console.log("Nomor ID : ", input[1][0]);
-console.log("Nama Lengkap : ", input[1][1])
-console.log("TTL : ", input[1][2] + " " + input[0][3])
-console.log("Hobi : ", input[1][4])
-
-console.log("Nomor ID : ", input[2][0]);
-console.log("Nama Lengkap : ", input[2][1])
-console.log("TTL : ", input[2][2] + " " + input[2][3])
-console.log("Hobi : ", input[2][4])
-
-console.log("Nomor ID : ", input[3][0]);
-console.log("Nama Lengkap : ", input[3][1])
-console.log("TTL : ", input[3][2] + " " + input[3][3])
-console.log("Hobi : ", input[3][4])
+dataHandling()
